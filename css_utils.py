@@ -1,5 +1,6 @@
 import numpy as np
 import json
+import ast
 from networkx.readwrite import json_graph
 
 
@@ -51,3 +52,6 @@ def get_field_list(G):
 def remove_node_if_no_field(G, author):
     if 'top_field' not in G.nodes[author]:
         G.remove_node(author)
+
+
+
